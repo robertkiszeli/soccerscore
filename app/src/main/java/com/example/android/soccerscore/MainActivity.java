@@ -206,9 +206,21 @@ public class MainActivity extends AppCompatActivity {
 
         secondHalf.setVisibility(View.GONE);
 
-        changeText(teamLeftNameText,teamRightNameText);
+        String changeHelper;
 
-        changeText(goalTeamLeftText,goalTeamRightText);
+        changeHelper = teamLeftNameText.getText().toString();
+        teamLeftNameText.setText(teamRightNameText.getText().toString());
+        teamRightNameText.setText(changeHelper);
+
+        teamLeftNameText.setBackgroundResource(R.drawable.high_lighted_right_text);
+        teamRightNameText.setBackgroundResource(R.drawable.high_lighted_left_text);
+
+        changeHelper = goalTeamLeftText.getText().toString();
+        goalTeamLeftText.setText(goalTeamRightText.getText().toString());
+        goalTeamRightText.setText(changeHelper);
+
+        goalTeamLeftText.setBackgroundResource(R.drawable.high_lighted_right_text);
+        goalTeamRightText.setBackgroundResource(R.drawable.high_lighted_left_text);
 
         changeText(penaltyTeamLeftText,penaltyTeamRightText);
 
@@ -346,11 +358,18 @@ public class MainActivity extends AppCompatActivity {
         teamText.setVisibility(View.GONE);
         teamLeftNameText.setVisibility(View.GONE);
         teamLeftNameText.setText("");
+        teamLeftNameText.setBackgroundResource(R.drawable.high_lighted_left_text);
         teamRightNameText.setVisibility(View.GONE);
         teamRightNameText.setText("");
+        teamRightNameText.setBackgroundResource(R.drawable.high_lighted_right_text);
 
         goalText.setVisibility(View.GONE);
-        resetText(goalTeamLeftText,goalTeamRightText);
+        goalTeamLeftText.setVisibility(View.GONE);
+        goalTeamLeftText.setText("0");
+        goalTeamLeftText.setBackgroundResource(R.drawable.high_lighted_left_text);
+        goalTeamRightText.setVisibility(View.GONE);
+        goalTeamRightText.setText("0");
+        goalTeamRightText.setBackgroundResource(R.drawable.high_lighted_right_text);
 
         penaltyText.setVisibility(View.GONE);
         resetText(penaltyTeamLeftText,penaltyTeamRightText);
@@ -372,6 +391,7 @@ public class MainActivity extends AppCompatActivity {
 
         tapText.setVisibility(View.GONE);
 
+
         resetButton(cornerTopLeft,cornerTopRight,false);
 
         resetButton(cornerBottomLeft,cornerBottomRight,false);
@@ -391,9 +411,12 @@ public class MainActivity extends AppCompatActivity {
         viewTwo.setVisibility(View.GONE);
         viewTwo.setText(R.string.zero);
 
+        viewOne.setBackgroundResource(R.drawable.team_left_text);
+        viewTwo.setBackgroundResource(R.drawable.team_right_text);
+
     }
 
-    private void resetButton(Button viewOne, Button viewTwo, boolean resetText){
+    private void resetButton(Button viewOne,Button viewTwo, boolean resetText){
 
         viewOne.setVisibility(View.GONE);
         viewTwo.setVisibility(View.GONE);
@@ -401,7 +424,11 @@ public class MainActivity extends AppCompatActivity {
         if(resetText){
             viewTwo.setText(R.string.zero);
             viewOne.setText(R.string.zero);
+            viewOne.setBackgroundResource(R.drawable.left_team_button);
+            viewTwo.setBackgroundResource(R.drawable.right_team_button);
+        }else {
+            viewOne.setBackgroundResource(R.drawable.right_team_button);
+            viewTwo.setBackgroundResource(R.drawable.left_team_button);
         }
-
     }
 }

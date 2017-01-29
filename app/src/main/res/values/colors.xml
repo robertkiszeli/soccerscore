@@ -24,4 +24,10 @@
 
     <color name="teamRightTextStroke">#FF1565C0</color>
     <color name="teamRightTextSolid">#64B5F6</color>
+
+    <color name="highlightedTeamLeftTextStroke">#E57373</color>
+    <color name="highLightedTeamLeftTextSolid">#C62828</color>
+
+    <color name="highlightedTeamRightTextStroke">#64B5F6</color>
+    <color name="highLightedTeamRightTextSolid">#1565C0</color>
 </resources>

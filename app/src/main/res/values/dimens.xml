@@ -86,7 +86,7 @@
     <!--Second Half Button-->
     <dimen name="second_half_button_padding">8dp</dimen>
     <dimen name="second_half_button_margin_start">8dp</dimen>
-    <dimen name="second_half_button_margin_left">8dp</dimen>
+    <dimen name="second_half_button_margin_left">16dp</dimen>
 
     <!-- Left Team Buttons Shape-->
     <dimen name="LeftTeamButtonStrokeWidth">1dp</dimen>
