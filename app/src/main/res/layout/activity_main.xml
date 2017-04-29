@@ -59,7 +59,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toLeftOf="@+id/team_Text"
         app:layout_constraintTop_toBottomOf="@+id/playedHalf" />
-
     <TextView
         android:id="@+id/team_Text"
         style="@style/Team"
@@ -70,7 +69,6 @@
         app:layout_constraintRight_toRightOf="@+id/playedHalf"
         app:layout_constraintTop_toBottomOf="@+id/playedHalf"
         app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/team_Right_Name_Text"
         style="@style/RightTeamName"
@@ -89,7 +87,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toLeftOf="@+id/goal_Text"
         app:layout_constraintTop_toBottomOf="@+id/team_Text" />
-
     <TextView
         android:id="@+id/goal_Text"
         style="@style/SimpleText"
@@ -100,7 +97,6 @@
         app:layout_constraintRight_toRightOf="@+id/team_Text"
         app:layout_constraintTop_toBottomOf="@+id/team_Text"
         app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/goal_Team_Right"
         style="@style/RightTeamText"
@@ -119,7 +115,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toLeftOf="@+id/penalty_Text"
         app:layout_constraintTop_toBottomOf="@+id/goal_Text" />
-
     <TextView
         android:id="@+id/penalty_Text"
         style="@style/SimpleText"
@@ -130,7 +125,6 @@
         app:layout_constraintRight_toRightOf="@+id/goal_Text"
         app:layout_constraintTop_toBottomOf="@+id/goal_Text"
         app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/penalty_Team_Right"
         style="@style/RightTeamText"
@@ -149,7 +143,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toLeftOf="@+id/corner_Kick_Text"
         app:layout_constraintTop_toBottomOf="@+id/penalty_Text" />
-
     <TextView
         android:id="@+id/corner_Kick_Text"
         style="@style/SimpleText"
@@ -160,7 +153,6 @@
         app:layout_constraintRight_toRightOf="@+id/penalty_Text"
         app:layout_constraintTop_toBottomOf="@+id/penalty_Text"
         app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/corner_Kick_Team_Right"
         style="@style/RightTeamText"
@@ -190,7 +182,6 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/tap_Text"/>
-
     <Button
         android:id="@+id/fouls_Team_Right"
         style="@style/RightTeamSmallButton"
@@ -199,7 +190,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toRightOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/tap_Text"/>
-
     <TextView
         android:id="@+id/fouls_Text"
         style="@style/SimpleText"
@@ -219,7 +209,6 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/fouls_Text"/>
-
     <Button
         android:id="@+id/throw_In_Team_Right"
         style="@style/RightTeamSmallButton"
@@ -228,7 +217,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toRightOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/fouls_Text"/>
-
     <TextView
         android:id="@+id/throw_In_Text"
         style="@style/SimpleText"
@@ -248,7 +236,6 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/throw_In_Text"/>
-
     <Button
         android:id="@+id/yellow_Card_Team_Right"
         style="@style/RightTeamSmallButton"
@@ -257,7 +244,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toRightOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/throw_In_Text"/>
-
     <TextView
         android:id="@+id/yellow_Card_Text"
         style="@style/SimpleText"
@@ -277,7 +263,6 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/yellow_Card_Text"/>
-
     <Button
         android:id="@+id/red_Card_Team_Right"
         style="@style/RightTeamSmallButton"
@@ -286,7 +271,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toRightOf="@+id/tap_Text"
         app:layout_constraintTop_toBottomOf="@+id/yellow_Card_Text"/>
-
     <TextView
         android:id="@+id/red_Card_Text"
         style="@style/SimpleText"
@@ -306,7 +290,6 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <Button
         android:id="@+id/corner_Bottom_Left"
         style="@style/RightTeamCorner"
@@ -315,7 +298,6 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
-
     <Button
         android:id="@+id/corner_Top_Right"
         style="@style/LeftTeamCorner"
@@ -324,7 +306,6 @@
         android:visibility="invisible"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <Button
         android:id="@+id/corner_Bottom_Right"
         style="@style/LeftTeamCorner"
@@ -346,7 +327,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <Button
         android:id="@+id/goal_Right"
         style="@style/LeftTeamGoal"
@@ -371,7 +351,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/goal_Left"
         app:layout_constraintLeft_toRightOf="@+id/goal_Left"
         app:layout_constraintTop_toTopOf="@+id/goal_Left"/>
-
     <Button
         android:id="@+id/penalty_Right"
         style="@style/LeftTeamPenalty"
